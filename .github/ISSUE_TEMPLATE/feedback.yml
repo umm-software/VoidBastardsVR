@@ -1,0 +1,11 @@
+name: Works on my setup / feedback
+description: Tell us how it ran on an untested headset, controller or the Steam version
+body:
+  - type: input
+    id: setup
+    attributes: { label: Setup, placeholder: "e.g. Steam version, Valve Index" }
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes: { label: How did it go? }
+    validations: { required: true }

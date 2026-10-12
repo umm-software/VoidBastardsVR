@@ -1,0 +1,29 @@
+name: Bug report
+description: Something doesn't work in the mod or the launcher
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Logs help a lot: in Umm Mod Launcher click **Logs**.
+        Logs can contain your Windows folder names (e.g. your user name). Edit those out if you'd rather not share them.
+  - type: input
+    id: version
+    attributes: { label: Mod version, placeholder: "1.0.0" }
+    validations: { required: true }
+  - type: dropdown
+    id: store
+    attributes: { label: Where did you get Void Bastards?, options: [Epic Games Store, Steam, Other] }
+    validations: { required: true }
+  - type: input
+    id: headset
+    attributes: { label: Headset and how it's connected, placeholder: "e.g. Quest 3 via Virtual Desktop, Index, Quest 2 via Link" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, and what did you expect?, description: Steps to reproduce if you can. }
+    validations: { required: true }
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Attach or paste LogOutput.log (the mod) and launcher.log. Edit out personal folder names if you like.
