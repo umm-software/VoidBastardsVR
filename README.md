@@ -50,6 +50,22 @@ If you try an untested setup, please [open an issue](../../issues/new/choose) an
 
 **After a game update**, just click **Launch in VR** again: the launcher notices what the update undid and repairs it.
 
+### Manual install (BepInEx yourself)
+Prefer to set things up by hand? Each release also has two zips you extract straight into the game folder:
+- **`VoidBastardsVR-vX.Y.Z-with-BepInEx.zip`**: the mod plus BepInEx 5.4.23.5, for a clean game.
+- **`VoidBastardsVR-vX.Y.Z-plugin-only.zip`**: just the mod, for an existing BepInEx 5 (x64) install.
+
+One step can't be done by a zip: switching on Unity's VR support in the game's own data file
+(`Void Bastards_Data\globalgamemanagers`). Do it once, and again after game updates, with the launcher's
+command-line mode. It installs nothing else and keeps a backup:
+
+```
+UmmModLauncher.exe --enable-vr "C:\path\to\Void Bastards"
+```
+
+Leave out the folder to find an Epic or Steam install automatically. `--disable-vr` puts the original file back.
+Full instructions are in `README-MANUAL.txt` inside the zips.
+
 ## Controls (Quest / Touch, right-handed)
 
 | Button | Action |

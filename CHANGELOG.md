@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1
+- Manual-install zips for players who set up BepInEx themselves: `-with-BepInEx` (includes BepInEx 5.4.23.5) and
+  `-plugin-only` (for an existing BepInEx 5 install). Instructions in `README-MANUAL.txt`.
+- Umm Mod Launcher: new command-line mode `--enable-vr` / `--disable-vr` that only switches Unity's VR support on or
+  off in the game data (with a backup), for manual installs.
+
 ## 1.0.0
 First public release.
 - Full game in PC VR via SteamVR: stereo 3D, head tracking, layered 3D main menu.
